@@ -1,17 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import FreeCodeLogo from './componentes/freecodelogo.js';
-import LstaDeTareas from './componentes/listadetareas.js';
-import Tarea from './componentes/tarea.js';
-import ListadeTareas from './componentes/listadetareas.js';
+import freeCodeCampLogo from './imagenes/freecodecamp-logo.png';
+import ListaDeTareas from './componentes/listadetareas';
+
 function App() {
   return (
-    <div className="App">
-      <FreeCodeLogo/>
-      <div className='tarea-lista-principal'>
+    <div className='aplicacion-tareas'>
+      <div className='freecodecamp-logo-contenedor'>
+        <img 
+          src={freeCodeCampLogo} 
+          className='freecodecamp-logo' />
+      </div>
+      <div className='tareas-lista-principal'>
         <h1>Mis Tareas</h1>
-        <ListadeTareas/>
-        
+        <ListaDeTareas />
       </div>
     </div>
   );
